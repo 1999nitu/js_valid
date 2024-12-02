@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_exam_system</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+  
+<div class="container">
+    <div id="registeration">
+        <form id="reg-form" class="form-horizontal" method="post">
+        <h2>Registration</h2>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="fname">First Name: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fname" name="fname" onfocus="checkFirstName()">
+                    <span class="error" id="fname-error"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="lname">Last Name: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lname" name="lname" onfocus="checkLastName()">
+                    <span class="error" id="lname-error"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="dob"> Date of Birth:</label>
+                <div class="col-sm-10">          
+                  <input type="date" class="form-control" id="dob"  name="dob" >
+                  <span class="error" id="dob-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="gender">Gender:</label>
+                <div class="col-sm-10">          
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="male" value="male"> Male
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="gender" id="female" value="female"> Female
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="gender" id="other" value="other"> Other
+                      </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">          
+                  <input type="email" class="form-control" id="email"  name="email" onfocus="checkEmail()">
+                  <span class="error" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="password">Password:</label>
+                <div class="col-sm-10">          
+                  <input type="password" class="form-control" id="password"  name="password" oninput="validatePassword()">
+                  <span class="error" id="password-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="cpassword">Confirm Password:</label>
+                <div class="col-sm-10">          
+                  <input type="password" class="form-control" id="cpassword"  name="cpassword" oninput="checkCpass()">
+                  <span class="error" id="cpassword-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="contact">Phone Number:</label>
+                <div class="col-sm-10">          
+            <input type="text" class="form-control" id="contact"  name="contact" onfocus="checkNum()">
+            <span class="error" id="contact-error"></span>
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="myAddress">Address:</label>
+                <div class="col-sm-10">          
+                    <div class="form-inline">
+                          <input type="text" class="form-control" id="street" name="street" placeholder="Street" onfocus="checkStreet()">
+                        <span class="error" id="street-error"></span>
+
+                          <input type="text" class="form-control" id="city" name="city" placeholder="City" onfocus="checkCity()">
+                        <span class="error" id="city-error"></span>
+
+                          <select class="form-control" id="state" name="state">
+                            <option value="">Select State</option>
+                            <option value="">Haryana</option>
+                            <option value="">Punjab</option>
+                            <option value="">J&k</option>
+                          </select>
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="course">Course:</label>
+                <div class="col-sm-10">          
+                    <select id="course" name="course" >
+                        <option value="" >Select an Option</option>
+                        <option value="Web Designing">Web Designing</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mern Stack">Mern Stack</option>
+                        <option value="Mean Stack">Mean Stack</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                      </select>
+                      <span class="error" id="course-error"></span>
+
+                </div>
+              </div>          
+
+              <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary btn-block" id="reg-btn" >Register</button>
+                </div>
+              </div>
+
+              <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="button" class="btn btn-success btn-block" id="log-btn" onclick="goLogin()" >Login</button>
+                </div>
+              </div>
+        </form>
+    </div>
+</div>
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="js/script2.js"></script>
+      <script>
+        function goLogin(){
+        window.location.href = 'login.html';
+        }
+      </script>
+
+</body>
+</html>

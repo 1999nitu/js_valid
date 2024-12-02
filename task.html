@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Selection</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Exam System</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+         
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a><span class="glyphicon glyphicon-log-in" onclick="logout()"></span> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container">
+        <div id="task-selection" >
+          <form class="task-form">
+              <div class="form-group selectTk">
+                <label class="control-label col-sm-12" for="task">Select Task:</label>
+                <div class="col-sm-12">          
+                    <select id="task-select" name="task" >
+                        <option value="" >Select an Option</option>
+                        <option value="Web Designing">Web Designing</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mern Stack">Mern Stack</option>
+                        <option value="Mern Stack">Mean Stack</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                      </select><br><br>
+              <button id="task-btn" type="button">Start Quiz</button><br><br>
+                </div>
+              </div>   
+          </form>
+        </div>
+    </div>
+      <!-- Question Display -->
+
+<div id="question-container" style="display:none;" >
+  <h2 id="question"></h2>
+  <input type="text" id="answer" placeholder="Answer">
+  <button id="next-btn">Next</button>
+  <p id="timer"></p>
+
+</div>
+<!-- Result Display -->
+<div id="result-container" style="display: none;">
+  <h2 id="result"></h2>
+  <ul id="answer-list"></ul>
+</div>
+
+    
+
+      <script src="js/task.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

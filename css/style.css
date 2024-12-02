@@ -1,0 +1,145 @@
+h2{
+    text-align: center;
+    padding-bottom: 20px;
+  
+ }
+#course{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+}
+.form-group span{
+    color: red;
+}
+#registration, #login{
+    width: 500px;
+    margin: 50px auto;
+    padding: 44px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#login p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+div#question-container h2 {
+    text-align: left;
+    font-weight: 800;
+}
+
+.form-group.selectTk label {
+    font-size: 30px;
+    font-weight: 700;
+    color: blue;
+}
+button#task-btn {
+    padding: 6px;
+    width: 50%;
+    background-color: #337AB7;
+    color: white;
+    font-size: 30px;
+}
+select#task-select {
+    width: 100%;
+    padding: 18px;
+}
+input#answer {
+    padding: 16px;
+    background-color: black;
+    color: white;
+    width: 29%;
+}
+button#next-btn {
+    padding: 16px;
+    width: 8%;
+    background-color: green;
+    color: white;
+}
+b {
+    text-align: center;
+    list-style-type: none;
+}
+#result-container {
+    text-align: center;
+}
+
+#result {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#answer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#answer-list li {
+    margin-bottom: 20px;
+}
+
+#answer-list li h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#answer-list li h4 {
+    font-size: 18px;
+    color: #666;
+}
+#login {
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding-bottom: 120px;
+}
+
+button#login-btn {
+    margin-bottom: 20px;
+}
+
+button#already-reg {
+    width: 80%;
+    margin-left: 39px;
+}
+div#result-container {
+    background-color: black;
+    color: white;
+}
+h2#question {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#result-container {
+    text-align: center;
+}
+div#question-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p#timer span {
+    background-color: red;
+    color: white;
+
+}
+
